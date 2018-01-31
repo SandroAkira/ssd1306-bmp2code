@@ -15,7 +15,7 @@ To display the image in the SD1306 OLED just use like the following command.
 
 ```
 ...
-display.drawFastImage(86, 18, 12, 12, loadingSymbol);  
+display.drawFastImage(86, 18, 12, 12, loading);  
 ...
 ```
 
