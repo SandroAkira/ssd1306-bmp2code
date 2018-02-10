@@ -14,6 +14,8 @@ PROGMEM const char loading [] = {
 To display the image in the SD1306 OLED just use like the following command.
 
 ```
+#include <SSD1306.h>                                      // OLED library by Daniel Eichhorn
+SSD1306  display(0x3c, D2, D1);                           // Initialize OLED Shield 0.66in
 ...
 display.drawFastImage(86, 18, 12, 12, loading);  
 ...
