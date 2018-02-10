@@ -27,7 +27,7 @@ def read_rows(path):
     image_file.seek(22)
     image_height = int(image_file.read(1).encode('hex'),16)
 
-    # print str(image_width) + "x" + str(image_height)
+    print "Dimension:",str(image_width) + "x" + str(image_height)
 
     image_file.seek(28)
     image_bits = image_file.read(1)
@@ -90,7 +90,7 @@ def read_rows(path):
         if len(r_string) == 0:
             # This is expected to happen when we've read everything.
             if len(rows) != image_height:
-                print "Warning!!! Read to the end of the file at the correct sub-pixel (red) but we've not read " + int(image_height.encode('hex'),16) + " rows! (" + str(len(rows)) + ")"
+                print "Warning!!! Read to the end of the file at the correct sub-pixel (red) but we've not read " + str(image_height) + " rows! (" + str(len(rows)) + ")"
             break
 
         r = ord(r_string)
