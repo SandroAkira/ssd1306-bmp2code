@@ -1,5 +1,5 @@
 # ssd1306-bmp2code
-BMP Grayscale to C Code converter. Tested on SSD1306 library. (Tested on Wemos + OLED Shield 64x48 - 0.66 inch)
+BMP 8/16/24/32 bits to C Code converter. Tested on SSD1306 library. (Tested on Wemos + OLED Shield 64x48 - 0.66 inch)
 
 Example output from [Example file](https://raw.githubusercontent.com/SandroAkira/ssd1306-bmp2code/master/loading.bmp)
 
